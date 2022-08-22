@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DogAdoption</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 3.1% 8.2%,
+          rgb(248, 250, 107) 0%,
+          rgb(238, 148, 148) 98.2%
+        );
+        width: 50%;
+        margin: 60px auto;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        background: linear-gradient(
+          44.8deg,
+          rgba(255, 136, 102, 0.67) -53.1%,
+          rgba(255, 221, 136, 0.28) 49%
+        );
+        width: 130%;
+        position: relative;
+        right: 125px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 30px;
+        padding: 10px;
+      }
+      h1 {
+        color: #613864;
+        font-size: 46px;
+        font-weight: 100;
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        color: #613864;
+      }
+      .available-dogs:hover {
+        text-decoration: underline;
+        text-align: center;
+      }
+      h3 {
+        text-align: center;
+        line-height: 1.5;
+        color: #6e5773;
+      }
+      button {
+        background: white;
+        display: block;
+        margin: 0 auto;
+        padding: 15px 30px;
+        font-size: 18px;
+        color: #613864;
+        border: 1px solid violet;
+        border-radius: 25px;
+        box-shadow: 5px 5px 10px rgb(61, 18, 103);
+        cursor: pointer;
+      }
+      button:hover {
+        background: salmon;
+        color: white;
+        text-align: center;
+      }
+      .helpUs,
+      .contactUs {
+        display: inline-block;
+        margin: 20px;
+        background-color: rgb(243, 240, 100);
+        padding: 10px;
+        font-size: 20px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        border-radius: 5px;
+        border: 0cm;
+        box-shadow: 5px 5px 5px rgb(0 0 0 / 20%);
+        transition: all 150ms ease-in-out;
+        cursor: pointer;
+      }
+      .available-dogs {
+        display: block;
+        margin-top: 20px;
+        text-decoration: none;
+      }
+      .headerImage {
+        display: flex;
+        justify-content: center;
+      }
+      .headerImage img {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      hr {
+        border: none;
+        border-top: 3px double #333;
+        color: #613864;
+        overflow: visible;
+        text-align: center;
+        height: 5px;
+        width: 100%;
+      }
+      p {
+        text-align: center;
+        color: #613864;
+        font-size: 20px;
+      }
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1><strong>Find your new best friend</strong></h1>
+      <h2>
+        One day you'll find someone that is obsessed with you. <br />
+        It's probably going to be a dog...
+      </h2>
+      <hr />
+      <div class="headerImage">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/039/353/original/puppy1.jpg?1656876850"
+          width="300"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/039/354/original/puppy2.jpg?1656876912"
+          width="300"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/039/355/original/puppy3.jpeg?1656876961"
+          width="300"
+        />
+      </div>
+      <hr />
+      <h3>
+        Your furry best friend will always be there for you, happy to listen
+        when you need an ear, ready to explore the world when you want to get
+        away, and always available to snuggle when you’re looking for comfort.
+        <br />
+      </h3>
+      <p>
+        <strong
+          >Sirius is the largest shelter for homeless animals in Ukraine. Every
+          day it takes care of more than 3,000 pets. Before you buy a dog, just
+          come round to the shelter.</strong
+        >
+
+        <a
+          href="https://dogcat.com.ua/ua"
+          target="_blank"
+          class="available-dogs"
+          >Dogs Available for Adoption
+        </a>
+      </p>
+      <div align="center">
+        <a href="https://dogcat.com.ua/en/" target="_"
+          ><input type="button" class="helpUs" value="HELP SIRIUS🐾"
+        /></a>
+        <button class="contactUs">CONTACT US</button>
+      </div>
+      <p class="footer">
+        This page was built by
+        <a
+          href="https://www.linkedin.com/in/anna-dvyhun-07427816a/"
+          target="_blank"
+        >
+          Anna Dvyhun</a
+        >💙💛
+      </p>
+    </div>
+    <script>
+      function contactUs() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+
+        alert("Thank you " + name + "! We'll be in touch by email!💌");
+      }
+      let contuctUsButton = document.querySelector("Button");
+      contuctUsButton.addEventListener("click", contactUs);
+    </script>
+  </body>
+</html>
